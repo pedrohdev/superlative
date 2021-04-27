@@ -71,6 +71,24 @@ export default {
                                         <strong class="lead">The worst</strong>
                                     </div>
                                 `
+                            } else if(this.adjective == "little"){
+                                this.alert = `
+                                    <div class="alert alert-success" role="alert">
+                                        <strong class="lead">The least</strong>
+                                    </div>
+                                `
+                            }else if(this.adjective == "much"){
+                                this.alert = `
+                                    <div class="alert alert-success" role="alert">
+                                        <strong class="lead">The most</strong>
+                                    </div>
+                                `
+                            }else if(this.adjective == "far"){
+                                this.alert = `
+                                    <div class="alert alert-success" role="alert">
+                                        <strong class="lead">The furthest</strong>
+                                    </div>
+                                `
                             }else if(this.adjective[this.adjective.length - 1] == 'e'){
                                this.alert = `
                                     <div class="alert alert-success" role="alert">
