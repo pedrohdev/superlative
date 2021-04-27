@@ -40,7 +40,8 @@ export default {
     methods: {
         clicked(){
             this.adjective = this.adjective.toLowerCase()
-            if(this.adjective != '' && this.adjective.trim(' ').length != 0){
+            if(this.adjective != '' && this.adjective.trim().length != 0){
+                this.adjective = this.adjective.trim()
                 this.alert = ''
                 this.loading = true
                 axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${this.adjective}`).then(data => {
